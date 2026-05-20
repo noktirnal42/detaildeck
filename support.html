@@ -3,16 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DetailDeck Support</title>
+  <title>DetailDeck Help Center</title>
+  <meta name="description" content="Step-by-step help for using DetailDeck on iPhone and iPad, including customers, jobs, photos, quotes, invoices, reminders, and backups.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main class="content">
-    <a href="index.html">DetailDeck</a>
-    <h1>Support</h1>
-    <p>For help with DetailDeck, contact FreeRangeLabs@drumnbus.com.</p>
-    <h2>What to include</h2>
-    <p>Please include your device model, iOS or iPadOS version, app version, and a short description of the issue.</p>
+<body class="support-page">
+  <header class="site-header" aria-label="DetailDeck">
+    <a class="brand" href="index.html">
+      <img src="assets/detaildeck-icon.png" alt="" width="40" height="40">
+      <span>DetailDeck</span>
+    </a>
+    <nav aria-label="Support links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main class="support-main">
+    <section class="support-hero" aria-labelledby="support-title">
+      <p class="eyebrow">Help Center</p>
+      <h1 id="support-title">Use DetailDeck with confidence.</h1>
+      <p class="lede">Find quick instructions for setting up records, managing jobs, creating quotes and invoices, saving job photos, enabling local reminders, and exporting a backup.</p>
+      <nav class="topic-nav" aria-label="Help topics">
+        <a href="#start">Start</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </section>
+
+    <section id="start" class="help-section" aria-labelledby="start-title">
+      <div>
+        <p class="eyebrow">Start Here</p>
+        <h2 id="start-title">Recommended first run</h2>
+      </div>
+      <ol class="step-list">
+        <li><strong>Complete the welcome screen.</strong> DetailDeck explains that records are local-first and that PDFs are created from job data.</li>
+        <li><strong>Add a customer.</strong> Open the Customers tab, tap the add button, then enter the customer's name, phone, email, and address as needed.</li>
+        <li><strong>Create a job.</strong> Open Jobs, tap add, choose a customer or walk-in customer, then enter the service title, package, price, schedule, tax, discount, and notes.</li>
+        <li><strong>Attach photos.</strong> Open Photos, choose the job, choose Before, After, or Note, then tap the add button to select images from Photos.</li>
+        <li><strong>Create documents.</strong> Open Quote, pick the job, create the quote, edit line items, then share the quote PDF. Create an invoice from the accepted quote when ready.</li>
+        <li><strong>Back up records.</strong> Open Settings from the Dashboard gear and use Export JSON Backup to save or share a local backup file.</li>
+      </ol>
+    </section>
+
+    <section id="workflows" class="help-section" aria-labelledby="workflow-title">
+      <div>
+        <p class="eyebrow">Core Workflows</p>
+        <h2 id="workflow-title">Common tasks</h2>
+      </div>
+      <div class="help-grid">
+        <article>
+          <h3>Track job status</h3>
+          <p>Open Jobs, select a job, then use the Status picker to move work from Lead to Quoted, Scheduled, In Progress, Completed, Paid, or Canceled.</p>
+        </article>
+        <article>
+          <h3>Share a quote</h3>
+          <p>Open Quote, select a job, create or edit the quote, then tap Share Quote. DetailDeck prepares a PDF and opens the iOS share sheet.</p>
+        </article>
+        <article>
+          <h3>Create an invoice</h3>
+          <p>Create a quote first. Then tap Create Invoice to copy approved quote lines into an invoice, review the totals, and tap Share Invoice.</p>
+        </article>
+        <article>
+          <h3>Manage job photos</h3>
+          <p>Use the Photos tab to add up to 12 images at a time. Choose the phase before importing. To remove a photo, use the Delete Photo action on that image.</p>
+        </article>
+        <article>
+          <h3>Enable reminders</h3>
+          <p>On the Dashboard, use the bell button in Follow-Ups to schedule local notifications for incomplete future follow-ups.</p>
+        </article>
+        <article>
+          <h3>Restore purchases</h3>
+          <p>Open Settings, then tap Restore Purchases. iOS checks App Store purchase history for the Apple ID signed in on the device.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="troubleshooting" class="help-section" aria-labelledby="troubleshooting-title">
+      <div>
+        <p class="eyebrow">Troubleshooting</p>
+        <h2 id="troubleshooting-title">Fast fixes</h2>
+      </div>
+      <div class="faq-list">
+        <article>
+          <h3>I cannot create a quote.</h3>
+          <p>Create at least one job first. Quotes are tied to jobs so totals, customer context, and invoice conversion stay together.</p>
+        </article>
+        <article>
+          <h3>Photos are not adding.</h3>
+          <p>Make sure a job is selected in Photos and that iOS has allowed photo library access. If access was denied, update permissions in the Settings app.</p>
+        </article>
+        <article>
+          <h3>Reminders are not appearing.</h3>
+          <p>Use the Dashboard bell button and allow notifications when iOS asks. Only incomplete follow-ups with future due dates are scheduled.</p>
+        </article>
+        <article>
+          <h3>I need my app version.</h3>
+          <p>Open Settings in DetailDeck. The app version and build number are listed near the top of the screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="help-section split-section" aria-labelledby="privacy-title">
+      <div>
+        <p class="eyebrow">Privacy and Backups</p>
+        <h2 id="privacy-title">Local-first records</h2>
+        <p>DetailDeck stores customer records, jobs, photos, follow-ups, quotes, and invoices on the user's device unless the user chooses to export or share them through iOS.</p>
+      </div>
+      <div class="support-callout">
+        <h3>Still need help?</h3>
+        <p>Use the steps above first. If the issue continues, send the device model, iOS or iPadOS version, app version, and a short description of what happened.</p>
+        <a class="button" href="mailto:FreeRangeLabs@drumnbus.com?subject=DetailDeck%20Support">Contact support</a>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <p><a href="index.html">DetailDeck</a> help and support</p>
+  </footer>
 </body>
 </html>

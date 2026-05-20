@@ -245,6 +245,141 @@ footer a {
   font-size: 3rem;
 }
 
+.support-page .site-header {
+  position: static;
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(18px);
+}
+
+.support-main {
+  display: grid;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1.25rem, 5vw, 4rem);
+}
+
+.support-hero,
+.help-section {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px);
+}
+
+.support-hero {
+  padding: clamp(2rem, 6vw, 5rem);
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.95), rgba(234, 240, 241, 0.75)),
+    url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1800&q=82") center/cover;
+}
+
+.support-hero h1 {
+  max-width: 52rem;
+  font-size: clamp(3rem, 6.5vw, 6.4rem);
+}
+
+.topic-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.topic-nav a {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid rgba(18, 62, 69, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--accent-strong);
+}
+
+.help-section {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.32fr) minmax(0, 1fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  padding: clamp(1.4rem, 4vw, 3rem);
+}
+
+.help-section h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.help-section h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+}
+
+.step-list,
+.faq-list,
+.help-grid {
+  margin: 0;
+}
+
+.step-list {
+  display: grid;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+}
+
+.step-list li {
+  padding-left: 0.35rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.step-list strong {
+  color: var(--ink);
+}
+
+.help-grid,
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.help-grid {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.help-grid article,
+.faq-list article,
+.support-callout {
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(244, 247, 248, 0.78);
+}
+
+.help-grid p,
+.faq-list p,
+.split-section p,
+.support-callout p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.split-section {
+  align-items: start;
+}
+
+.support-callout {
+  display: grid;
+  gap: 1rem;
+}
+
+.support-callout .button {
+  width: fit-content;
+}
+
 @media (max-width: 760px) {
   .site-header {
     position: static;
@@ -259,5 +394,9 @@ footer a {
 
   .privacy-band {
     display: grid;
+  }
+
+  .help-section {
+    grid-template-columns: 1fr;
   }
 }
